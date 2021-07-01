@@ -1,18 +1,6 @@
 <?php
 
-// add sub-level administrative menu
 function wpe_hack_plugin_sublevel_menu() {
-	/*
-	add_submenu_page(
-	string   $parent_slug,
-	string   $page_title,
-	string   $menu_title,
-	string   $capability,
-	string   $menu_slug,
-	callable $function = ''
-	);
-	*/
-
 	add_submenu_page(
 		'options-general.php',
 		esc_html__( 'Hack Plugin Settings', 'wpe-plugin-hackday' ),

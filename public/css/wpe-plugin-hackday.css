@@ -1,0 +1,37 @@
+.object-cache-panel, .random-quote-panel, .object-cache-panel-admin {
+	border: 1px solid #8cabc8;
+	padding: 20px;
+	background: white;
+	margin: 10px 10px 0 0;
+	max-width: 400px;
+	min-width: 400px;
+}
+
+.clear-cache-button, .random-quote-button {
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	color: #002838;
+	padding: 16px;
+	box-shadow: 0 0 0 2px #002838 inset;
+	background-color: transparent;
+}
+
+.clear-cache-button:hover, .random-quote-button:hover {
+	color: #5c43ae;
+	border: none;
+	box-shadow: 0 0 0 2px #5c43ae inset;
+}
+
+.ajax-response-clear-cache, .ajax-quote-response {
+	color: green;
+}
+
+.panels {
+	display: flex;
+    flex-wrap: wrap;
+}
