@@ -1,7 +1,7 @@
 (($) => {
 	$( document ).ready(
 		() => {
-        // when user submits the form
+			// when user submits the form
 			$( ".object-cache-panel" ).on(
 				"submit",
 				function (event) {
@@ -19,7 +19,7 @@
 							action: "admin_hook",
 						},
 						(data) => {
-                        $( ".ajax-response-clear-cache" ).html( data );
+							$( ".ajax-response-clear-cache" ).html( data );
 						}
 					);
 				}
@@ -27,15 +27,15 @@
 		$( ".random-quote-panel" ).on(
 			"submit",
 			(event) => {
-            event.preventDefault();
-            $.post(
+				event.preventDefault();
+				$.post(
 					ajaxurl,
 					{
 						nonce: ajax_admin.nonce,
 						action: "admin_quote_handler",
 					},
 					(data) => {
-                    $( ".ajax-quote-response" ).html( data );
+						$( ".ajax-quote-response" ).html( data );
 					}
 				);
 			}
