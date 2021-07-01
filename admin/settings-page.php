@@ -118,7 +118,7 @@ function has_cleared_object_cache() {
 
 function render_success_message() {
 	if ( has_cleared_object_cache() ) {
-		echo "<p class='clear-success'>Object cache cleared!</p>";
+		echo "<p class='clear-success'>Object cache cleared! Note the query params in the URL.</p>";
 	}
 }
 
