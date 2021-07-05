@@ -1,4 +1,4 @@
-.object-cache-panel, .random-quote-panel, .object-cache-panel-admin {
+.object-cache-panel, .random-quote-panel, .object-cache-panel-admin, .rest-message-panel {
 	border: 1px solid #8cabc8;
 	padding: 20px;
 	background: white;
@@ -7,7 +7,9 @@
 	min-width: 400px;
 }
 
-.clear-cache-button, .random-quote-button {
+.clear-cache-button,
+.random-quote-button,
+.rest-message-button {
 	padding: 10px 15px;
 	border-radius: 5px;
 	border: none;
