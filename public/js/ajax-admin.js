@@ -41,7 +41,7 @@
         type: "GET",
         url: `${ajax_admin.rest_endpoint}wpehack/v1/test/`,
       }).done((data) => {
-        $(".rest-message-response").html(data);
+        $(".rest-message-response").html(data.quote);
       });
     });
   });

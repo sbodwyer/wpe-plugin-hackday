@@ -98,16 +98,7 @@ function wpe_hackday_ajax_admin_quote_hander()
         return;
     }
 
-    $quotes = array(
-    'Muesli',
-    'I Love Muesli',
-    'Why Dont You Love Muesli?',
-    'Where is my muesli?',
-    'Has anyone seen my muesli?',
-    'Can you review this muesli please?',
-    'Want to pair on some muesli?',
-    'Can anybody get me some muesli?',
-    );
+    $quotes = Wpe_Hackday_REST_API::get_quotes();
     $quote  = array_rand($quotes);
     echo $quotes[ $quote ];
     wp_die();
